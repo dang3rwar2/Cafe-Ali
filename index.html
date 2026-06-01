@@ -1,100 +1,250 @@
-LUNA CAFÉ *{ margin:0; padding:0; box-sizing:border-box; font-family:'Vazirmatn',sans-serif; } body{ background:linear-gradient(180deg,#0f172a,#111827,#0f172a); color:#fff; min-height:100vh; } .hero{ text-align:center; padding:70px 20px 50px; } .moon{ font-size:70px; margin-bottom:15px; } .hero h1{ font-size:42px; letter-spacing:4px; color:#D4AF37; } .hero p{ color:#cbd5e1; margin-top:10px; } .container{ width:92%; max-width:850px; margin:auto; padding-bottom:60px; } .special{ background:rgba(212,175,55,.15); border:1px solid rgba(212,175,55,.4); padding:20px; border-radius:20px; text-align:center; margin-bottom:25px; backdrop-filter:blur(10px); } .special h3{ color:#D4AF37; margin-bottom:10px; } details{ background:rgba(255,255,255,.08); backdrop-filter:blur(15px); border:1px solid rgba(255,255,255,.08); margin-bottom:15px; border-radius:20px; overflow:hidden; } summary{ cursor:pointer; padding:20px; font-size:18px; font-weight:700; list-style:none; } summary::-webkit-details-marker{ display:none; } .item{ display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border-top:1px solid rgba(255,255,255,.08); } .item-name{ font-weight:600; } .item-desc{ font-size:12px; color:#cbd5e1; margin-top:4px; } .price{ color:#D4AF37; font-weight:700; } .footer{ text-align:center; padding:40px 20px; color:#94a3b8; } .badge{ display:inline-block; padding:6px 14px; border-radius:999px; background:#D4AF37; color:#000; font-size:12px; font-weight:bold; margin-bottom:10px; } .info{ margin-top:20px; font-size:14px; line-height:2; } .search{ width:100%; padding:14px; border:none; border-radius:15px; margin-bottom:20px; background:rgba(255,255,255,.1); color:white; outline:none; } .search::placeholder{ color:#cbd5e1; } 
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-🌙
+<title>LUNA CAFÉ</title>
 
-LUNA CAFÉ
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-Taste The Moonlight
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Vazirmatn',sans-serif;
+}
 
-پیشنهاد ویژه
+body{
+background:linear-gradient(180deg,#0f172a,#111827,#020617);
+color:#fff;
+min-height:100vh;
+}
 
-Luna Special
+.hero{
+text-align:center;
+padding:60px 20px 40px;
+}
 
-لاته وانیلی + براونی شکلاتی
+.moon{
+font-size:80px;
+margin-bottom:10px;
+}
 
+.hero h1{
+font-size:42px;
+color:#D4AF37;
+letter-spacing:3px;
+}
 
-10 ₼ 
+.hero p{
+margin-top:8px;
+color:#cbd5e1;
+}
 
-☕ نوشیدنی‌های گرم 
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
 
-اسپرسو
+.search{
+width:100%;
+padding:15px;
+border:none;
+border-radius:16px;
+background:rgba(255,255,255,.08);
+color:white;
+font-size:15px;
+outline:none;
+margin-bottom:20px;
+}
 
-شات دوبل اسپرسو
+.search::placeholder{
+color:#cbd5e1;
+}
 
-3 ₼
+.special{
+background:rgba(212,175,55,.12);
+border:1px solid rgba(212,175,55,.3);
+padding:20px;
+border-radius:20px;
+text-align:center;
+margin-bottom:20px;
+backdrop-filter:blur(10px);
+}
 
-آمریکانو
+.badge{
+display:inline-block;
+background:#D4AF37;
+color:#000;
+padding:6px 14px;
+border-radius:999px;
+font-size:12px;
+font-weight:bold;
+margin-bottom:10px;
+}
 
-اسپرسو + آب داغ
+details{
+background:rgba(255,255,255,.06);
+border:1px solid rgba(255,255,255,.08);
+border-radius:18px;
+margin-bottom:15px;
+overflow:hidden;
+backdrop-filter:blur(10px);
+}
 
-4 ₼
+summary{
+padding:18px;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+list-style:none;
+}
 
-کاپوچینو
+summary::-webkit-details-marker{
+display:none;
+}
 
-اسپرسو و فوم شیر
+.item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 18px;
+border-top:1px solid rgba(255,255,255,.08);
+}
 
-5 ₼
+.item-name{
+font-weight:600;
+}
 
-لاته
+.item-desc{
+font-size:12px;
+color:#cbd5e1;
+margin-top:4px;
+}
 
-اسپرسو و شیر بخار داده شده
+.price{
+color:#D4AF37;
+font-weight:bold;
+font-size:15px;
+}
 
-6 ₼
+.footer{
+text-align:center;
+padding:40px 20px;
+color:#94a3b8;
+}
 
-🧊 نوشیدنی‌های سرد 
+.info{
+line-height:2;
+margin-top:15px;
+}
+</style>
+</head>
 
-آیس لاته
+<body>
 
-لاته خنک
+<div class="hero">
+<div class="moon">🌙</div>
+<h1>LUNA CAFÉ</h1>
+<p>Taste The Moonlight</p>
+</div>
 
-6.5 ₼
+<div class="container">
 
-موهیتو
+<input
+type="text"
+id="search"
+class="search"
+placeholder="جستجو در منو..."
+onkeyup="filterMenu()">
 
-نعناع تازه و لیمو
+<div class="special">
+<div class="badge">پیشنهاد ویژه</div>
+<h3>Luna Special</h3>
+<br>
+<p>لاته وانیلی + براونی شکلاتی</p>
+<br>
+<strong>10 ₼</strong>
+</div>
 
-5 ₼
+<details open>
+<summary>☕ نوشیدنی‌های گرم</summary>
 
-لیموناد
+<div class="item menu-item">
+<div>
+<div class="item-name">اسپرسو</div>
+<div class="item-desc">شات دوبل اسپرسو</div>
+</div>
+<div class="price">3 ₼</div>
+</div>
 
-تهیه روز
+<div class="item menu-item">
+<div>
+<div class="item-name">آمریکانو</div>
+<div class="item-desc">اسپرسو و آب داغ</div>
+</div>
+<div class="price">4 ₼</div>
+</div>
 
-4 ₼
+<div class="item menu-item">
+<div>
+<div class="item-name">کاپوچینو</div>
+<div class="item-desc">اسپرسو و فوم شیر</div>
+</div>
+<div class="price">5 ₼</div>
+</div>
 
-🍰 دسرها 
+<div class="item menu-item">
+<div>
+<div class="item-name">لاته</div>
+<div class="item-desc">اسپرسو و شیر بخار داده شده</div>
+</div>
+<div class="price">6 ₼</div>
+</div>
+</details>
 
-چیزکیک
+<details>
+<summary>🧊 نوشیدنی‌های سرد</summary>
 
-نیویورکی
+<div class="item menu-item">
+<div>
+<div class="item-name">آیس لاته</div>
+<div class="item-desc">سرو شده با یخ</div>
+</div>
+<div class="price">6.5 ₼</div>
+</div>
 
-7 ₼
+<div class="item menu-item">
+<div>
+<div class="item-name">موهیتو</div>
+<div class="item-desc">نعناع و لیمو تازه</div>
+</div>
+<div class="price">5 ₼</div>
+</div>
 
-براونی
+<div class="item menu-item">
+<div>
+<div class="item-name">لیموناد</div>
+<div class="item-desc">خانگی</div>
+</div>
+<div class="price">4 ₼</div>
+</div>
+</details>
 
-شکلاتی
+<details>
+<summary>🍰 دسرها</summary>
 
-5 ₼
+<div class="item menu-item">
+<div>
+<div class="item-name">چیزکیک</div>
+<div class="item-desc">نیویورکی</div>
+</div>
+<div class="price">7 ₼</div>
+</div>
 
-🥐 صبحانه 
-
-کروسان کره‌ای
-
-تازه پخت
-
-4 ₼
-
-پنکیک
-
-عسل و میوه
-
-8 ₼
-
-📶 WiFi : LunaGuest
-🔑 Password : Welcome123
-🕒 08:00 - 23:00
-📍 Luna Café 
-
-
-🌙 Thank You For Visiting
-
-function filterMenu() { let input=document.getElementById("search"); let filter=input.value.toLowerCase(); let items=document.getElementsByClassName("menu-item"); for(let i=0;i<items.length;i++){ let txt=items[i].innerText.toLowerCase(); if(txt.indexOf(filter)>-1){ items[i].style.display="flex"; }else{ items[i].style.display="none"; } } }
+<div class="item menu-item">
+<div>
+<div class="item-name">
