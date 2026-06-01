@@ -1,105 +1,100 @@
-<!DOCTYPE html>
-<html dir="rtl" lang="fa">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>منوی کافه</title>
+LUNA CAFÉ *{ margin:0; padding:0; box-sizing:border-box; font-family:'Vazirmatn',sans-serif; } body{ background:linear-gradient(180deg,#0f172a,#111827,#0f172a); color:#fff; min-height:100vh; } .hero{ text-align:center; padding:70px 20px 50px; } .moon{ font-size:70px; margin-bottom:15px; } .hero h1{ font-size:42px; letter-spacing:4px; color:#D4AF37; } .hero p{ color:#cbd5e1; margin-top:10px; } .container{ width:92%; max-width:850px; margin:auto; padding-bottom:60px; } .special{ background:rgba(212,175,55,.15); border:1px solid rgba(212,175,55,.4); padding:20px; border-radius:20px; text-align:center; margin-bottom:25px; backdrop-filter:blur(10px); } .special h3{ color:#D4AF37; margin-bottom:10px; } details{ background:rgba(255,255,255,.08); backdrop-filter:blur(15px); border:1px solid rgba(255,255,255,.08); margin-bottom:15px; border-radius:20px; overflow:hidden; } summary{ cursor:pointer; padding:20px; font-size:18px; font-weight:700; list-style:none; } summary::-webkit-details-marker{ display:none; } .item{ display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border-top:1px solid rgba(255,255,255,.08); } .item-name{ font-weight:600; } .item-desc{ font-size:12px; color:#cbd5e1; margin-top:4px; } .price{ color:#D4AF37; font-weight:700; } .footer{ text-align:center; padding:40px 20px; color:#94a3b8; } .badge{ display:inline-block; padding:6px 14px; border-radius:999px; background:#D4AF37; color:#000; font-size:12px; font-weight:bold; margin-bottom:10px; } .info{ margin-top:20px; font-size:14px; line-height:2; } .search{ width:100%; padding:14px; border:none; border-radius:15px; margin-bottom:20px; background:rgba(255,255,255,.1); color:white; outline:none; } .search::placeholder{ color:#cbd5e1; } 
 
-<style>
-body{
-font-family:tahoma;
-background:#f8f4ef;
-margin:0;
-padding:20px;
-color:#333;
-}
+🌙
 
-.container{
-max-width:700px;
-margin:auto;
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,.1);
-}
+LUNA CAFÉ
 
-h1{
-text-align:center;
-color:#5d4037;
-}
+Taste The Moonlight
 
-h2{
-border-bottom:2px solid #ddd;
-padding-bottom:5px;
-margin-top:30px;
-}
+پیشنهاد ویژه
 
-.item{
-display:flex;
-justify-content:space-between;
-padding:8px 0;
-}
+Luna Special
 
-.footer{
-text-align:center;
-margin-top:30px;
-color:#666;
-}
-</style>
-</head>
+لاته وانیلی + براونی شکلاتی
 
-<body>
 
-<div class="container">
+10 ₼ 
 
-<h1>☕ کافه دوست من</h1>
+☕ نوشیدنی‌های گرم 
 
-<h2>نوشیدنی‌های گرم</h2>
+اسپرسو
 
-<div class="item">
-<span>اسپرسو</span>
-<span>3 ₼</span>
-</div>
+شات دوبل اسپرسو
 
-<div class="item">
-<span>کاپوچینو</span>
-<span>5 ₼</span>
-</div>
+3 ₼
 
-<div class="item">
-<span>لاته</span>
-<span>6 ₼</span>
-</div>
+آمریکانو
 
-<h2>نوشیدنی‌های سرد</h2>
+اسپرسو + آب داغ
 
-<div class="item">
-<span>آیس لاته</span>
-<span>6.5 ₼</span>
-</div>
+4 ₼
 
-<div class="item">
-<span>موهیتو</span>
-<span>5 ₼</span>
-</div>
+کاپوچینو
 
-<h2>دسر</h2>
+اسپرسو و فوم شیر
 
-<div class="item">
-<span>چیزکیک</span>
-<span>6 ₼</span>
-</div>
+5 ₼
 
-<div class="item">
-<span>براونی</span>
-<span>5 ₼</span>
-</div>
+لاته
 
-<div class="footer">
-❤️ خوش آمدید
-</div>
+اسپرسو و شیر بخار داده شده
 
-</div>
+6 ₼
 
-</body>
-</html>
+🧊 نوشیدنی‌های سرد 
+
+آیس لاته
+
+لاته خنک
+
+6.5 ₼
+
+موهیتو
+
+نعناع تازه و لیمو
+
+5 ₼
+
+لیموناد
+
+تهیه روز
+
+4 ₼
+
+🍰 دسرها 
+
+چیزکیک
+
+نیویورکی
+
+7 ₼
+
+براونی
+
+شکلاتی
+
+5 ₼
+
+🥐 صبحانه 
+
+کروسان کره‌ای
+
+تازه پخت
+
+4 ₼
+
+پنکیک
+
+عسل و میوه
+
+8 ₼
+
+📶 WiFi : LunaGuest
+🔑 Password : Welcome123
+🕒 08:00 - 23:00
+📍 Luna Café 
+
+
+🌙 Thank You For Visiting
+
+function filterMenu() { let input=document.getElementById("search"); let filter=input.value.toLowerCase(); let items=document.getElementsByClassName("menu-item"); for(let i=0;i<items.length;i++){ let txt=items[i].innerText.toLowerCase(); if(txt.indexOf(filter)>-1){ items[i].style.display="flex"; }else{ items[i].style.display="none"; } } }
