@@ -1,0 +1,100 @@
+LUNA CAFÉ *{ margin:0; padding:0; box-sizing:border-box; font-family:'Vazirmatn',sans-serif; } body{ background:linear-gradient(180deg,#0f172a,#111827,#0f172a); color:#fff; min-height:100vh; } .hero{ text-align:center; padding:70px 20px 50px; } .moon{ font-size:70px; margin-bottom:15px; } .hero h1{ font-size:42px; letter-spacing:4px; color:#D4AF37; } .hero p{ color:#cbd5e1; margin-top:10px; } .container{ width:92%; max-width:850px; margin:auto; padding-bottom:60px; } .special{ background:rgba(212,175,55,.15); border:1px solid rgba(212,175,55,.4); padding:20px; border-radius:20px; text-align:center; margin-bottom:25px; backdrop-filter:blur(10px); } .special h3{ color:#D4AF37; margin-bottom:10px; } details{ background:rgba(255,255,255,.08); backdrop-filter:blur(15px); border:1px solid rgba(255,255,255,.08); margin-bottom:15px; border-radius:20px; overflow:hidden; } summary{ cursor:pointer; padding:20px; font-size:18px; font-weight:700; list-style:none; } summary::-webkit-details-marker{ display:none; } .item{ display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border-top:1px solid rgba(255,255,255,.08); } .item-name{ font-weight:600; } .item-desc{ font-size:12px; color:#cbd5e1; margin-top:4px; } .price{ color:#D4AF37; font-weight:700; } .footer{ text-align:center; padding:40px 20px; color:#94a3b8; } .badge{ display:inline-block; padding:6px 14px; border-radius:999px; background:#D4AF37; color:#000; font-size:12px; font-weight:bold; margin-bottom:10px; } .info{ margin-top:20px; font-size:14px; line-height:2; } .search{ width:100%; padding:14px; border:none; border-radius:15px; margin-bottom:20px; background:rgba(255,255,255,.1); color:white; outline:none; } .search::placeholder{ color:#cbd5e1; } 
+
+🌙
+
+LUNA CAFÉ
+
+Taste The Moonlight
+
+پیشنهاد ویژه
+
+Luna Special
+
+لاته وانیلی + براونی شکلاتی
+
+
+10 ₼ 
+
+☕ نوشیدنی‌های گرم 
+
+اسپرسو
+
+شات دوبل اسپرسو
+
+3 ₼
+
+آمریکانو
+
+اسپرسو + آب داغ
+
+4 ₼
+
+کاپوچینو
+
+اسپرسو و فوم شیر
+
+5 ₼
+
+لاته
+
+اسپرسو و شیر بخار داده شده
+
+6 ₼
+
+🧊 نوشیدنی‌های سرد 
+
+آیس لاته
+
+لاته خنک
+
+6.5 ₼
+
+موهیتو
+
+نعناع تازه و لیمو
+
+5 ₼
+
+لیموناد
+
+تهیه روز
+
+4 ₼
+
+🍰 دسرها 
+
+چیزکیک
+
+نیویورکی
+
+7 ₼
+
+براونی
+
+شکلاتی
+
+5 ₼
+
+🥐 صبحانه 
+
+کروسان کره‌ای
+
+تازه پخت
+
+4 ₼
+
+پنکیک
+
+عسل و میوه
+
+8 ₼
+
+📶 WiFi : LunaGuest
+🔑 Password : Welcome123
+🕒 08:00 - 23:00
+📍 Luna Café 
+
+
+🌙 Thank You For Visiting
+
+function filterMenu() { let input=document.getElementById("search"); let filter=input.value.toLowerCase(); let items=document.getElementsByClassName("menu-item"); for(let i=0;i<items.length;i++){ let txt=items[i].innerText.toLowerCase(); if(txt.indexOf(filter)>-1){ items[i].style.display="flex"; }else{ items[i].style.display="none"; } } }
